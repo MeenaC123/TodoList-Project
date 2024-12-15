@@ -1,0 +1,63 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  overflow: hidden; 
+}
+
+.custom-bg {
+  background: linear-gradient(135deg, #0b0b22, #141447, #1c1c6b); /* Updated gradient */
+  color: white;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar styles matching the image */
+.custom-navbar {
+  background: rgba(67, 67, 77, 0.473); /* Dark navy background with slight transparency */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Floating shadow effect */
+  padding: 15px 30px; /* Padding for spacing */
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between; /* Logo on the left, links on the right */
+  align-items: center; /* Vertically align items */
+  position: fixed; /* Fixed to the top of the viewport */
+  top: 20px; /* Adds floating effect by moving down */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Align center */
+  width: 90%; /* Adjust width (90% of viewport width) */
+  border-radius: 12px; /* Rounded corners */
+  z-index: 1000; /* Ensures the navbar stays above other elements */
+}
+
+.custom-navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.custom-navbar .nav-link {
+  color: #b4b4ff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #6c63ff; /* Highlight effect on hover */
+}
+
+/* Static Content Area 
+.static-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+}*/
